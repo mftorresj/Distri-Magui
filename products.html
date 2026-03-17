@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Distri Magüi | Productos</title>
+</head>
+
+<body>
+    <!-- Encabezado Principal -->
+    <header class="main-header">
+        <div class="logo-container">
+            <!-- <img src="img/logo.jpeg" alt="Logo"> -->
+            <a href="index.html">
+                <img src="" alt="Logo">
+                <h1>Distri Magüi</h1>
+            </a>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="products.html">Productos</a></li>
+                <li><a href="aboutUs.html">Nosotros</a></li>
+                <li><a href="paymentMethods.html">Métodos de Pago</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main class="main-content">
+        <!-- Título y Descripción de la Página -->
+        <div class="page-header">
+            <h1>Catálogo de Belleza</h1>
+            <p>Descubre las últimas tendencias para tu cuidado personal</p>
+        </div>
+
+        <!-- Categorías (Tabs) -->
+        <div class="categories-tabs">
+            <a href="#" class="tab active-tab">ROSTRO</a>
+            <a href="#" class="tab">OJOS</a>
+            <a href="#" class="tab">LABIOS</a>
+            <a href="#" class="tab">SKINCARE</a>
+            <a href="#" class="tab">KITS</a>
+        </div>
+
+        <!-- Contenedor del Catálogo (Filtros + Lista de Productos) -->
+        <div class="catalog-container">
+            <!-- Sidebar de Filtros -->
+            <aside class="filters-sidebar">
+                <h3>Filtros</h3>
+
+                <!-- Grupo de Filtro: Precio -->
+                <div class="filter-group">
+                    <h2>Precio</h2>
+                    <label>
+                        <span>Bajo ($0 - $50)</span>
+                        <input type="checkbox" name="precio" value="bajo">
+                    </label>
+                    <label>
+                        <span>Medio ($50 - $100)</span>
+                        <input type="checkbox" name="precio" value="medio">
+                    </label>
+                    <label>
+                        <span>Alto ($100 - $150)</span>
+                        <input type="checkbox" name="precio" value="alto">
+                    </label>
+                    <label>
+                        <span>Premium ($150 - $200)</span>
+                        <input type="checkbox" name="precio" value="premium">
+                    </label>
+                </div>
+
+                <!-- Grupo de Filtro: Tipo de Piel -->
+                <div class="filter-group">
+                    <h2>Tipo de Piel</h2>
+                    <label>
+                        <span>Normal</span>
+                        <input type="checkbox" name="tipoPiel" value="normal">
+                    </label>
+                    <label>
+                        <span>Grasa</span>
+                        <input type="checkbox" name="tipoPiel" value="grasa">
+                    </label>
+                    <label>
+                        <span>Seca</span>
+                        <input type="checkbox" name="tipoPiel" value="seca">
+                    </label>
+                    <label>
+                        <span>Mixta</span>
+                        <input type="checkbox" name="tipoPiel" value="mixta">
+                    </label>
+                </div>
+
+                <!-- Grupo de Filtro: Marca -->
+                <div class="filter-group">
+                    <h2>Marca</h2>
+                    <label>
+                        <span>Maybelline</span>
+                        <input type="checkbox" name="marca" value="maybelline">
+                    </label>
+                    <label>
+                        <span>L'Oréal</span>
+                        <input type="checkbox" name="marca" value="loreal">
+                    </label>
+                    <label>
+                        <span>Revlon</span>
+                        <input type="checkbox" name="marca" value="revlon">
+                    </label>
+                    <label>
+                        <span>Covergirl</span>
+                        <input type="checkbox" name="marca" value="covergirl">
+                    </label>
+                </div>
+
+                <!-- Oferta Especial / Banner Lateral -->
+                <div class="promo-banner">
+                    <p class="promo-title">Oferta del día</p>
+                    <p class="promo-desc">20% de descuento en toda la línea de Skincare Coreano.</p>
+                    <button class="btn-promo">Ver productos</button>
+                </div>
+            </aside>
+
+            <!-- Sección de Productos -->
+            <section class="products-section">
+                <!-- Barra de controles superior -->
+                <div class="products-controls">
+                    <p class="products-count">Mostrando <span>12 productos</span></p>
+                    <div class="sort-control">
+                        <label for="sortSelector">Ordenar por:</label>
+                        <select id="sortSelector" class="sort-select">
+                            <option>Más populares</option>
+                            <option>Menor precio</option>
+                            <option>Mayor precio</option>
+                            <option>Novedades</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Grid principal de productos -->
+                <div class="products-grid">
+                    <!-- Tarjeta de Producto 1 -->
+                    <article class="product-card">
+                        <div class="product-image-container">
+                            <button class="btn-favorite" title="Agregar a favoritos">
+                                <span class="material-symbols-outlined">favorite</span>
+                            </button>
+                            <img src="" alt="Base Fluida HD Velvet">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Base Fluida HD Velvet</h3>
+                            <p class="product-desc">Base de maquillaje de alta cobertura con acabado mate y larga
+                                duración.</p>
+                            <div class="product-price-row">
+                                <p class="product-price">$150.00</p>
+                                <button class="btn-add-cart">Agregar al carrito</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Tarjeta de Producto 2 -->
+                    <article class="product-card">
+                        <div class="product-image-container">
+                            <button class="btn-favorite" title="Agregar a favoritos">
+                                <span class="material-symbols-outlined">favorite</span>
+                            </button>
+                            <img src="" alt="Paleta Nude Radiance">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Paleta Nude Radiance</h3>
+                            <p class="product-desc">12 tonos altamente pigmentados, desde mates sedosos hasta
+                                metalizados brillantes.</p>
+                            <div class="product-price-row">
+                                <p class="product-price">$45.000</p>
+                                <button class="btn-add-cart">Agregar al carrito</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Tarjeta de Producto 3 -->
+                    <article class="product-card">
+                        <div class="product-image-container">
+                            <button class="btn-favorite" title="Agregar a favoritos">
+                                <span class="material-symbols-outlined">favorite</span>
+                            </button>
+                            <img src="" alt="Labial Velvet Matte Red">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Labial Velvet Matte Red</h3>
+                            <p class="product-desc">Color intenso de una sola pasada. Fórmula hidratante que no reseca
+                                tus labios.</p>
+                            <div class="product-price-row">
+                                <p class="product-price">$18.500</p>
+                                <button class="btn-add-cart">Agregar al carrito</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Tarjeta de Producto 4 -->
+                    <article class="product-card">
+                        <div class="product-image-container">
+                            <button class="btn-favorite" title="Agregar a favoritos">
+                                <span class="material-symbols-outlined">favorite</span>
+                            </button>
+                            <img src="" alt="Sérum Hialurónico + B5">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Sérum Hialurónico + B5</h3>
+                            <p class="product-desc">Repara y rellena la piel. Hidratación profunda para un rostro
+                                visiblemente más sano.</p>
+                            <div class="product-price-row">
+                                <p class="product-price">$55.000</p>
+                                <button class="btn-add-cart">Agregar al carrito</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Tarjeta de Producto 5 -->
+                    <article class="product-card">
+                        <div class="product-image-container">
+                            <button class="btn-favorite" title="Agregar a favoritos">
+                                <span class="material-symbols-outlined">favorite</span>
+                            </button>
+                            <img src="" alt="Crema Hidratante Aqua">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Crema Hidratante Aqua</h3>
+                            <p class="product-desc">Textura gel-crema ligera que absorbe rápidamente. Ideal para pieles
+                                mixtas.</p>
+                            <div class="product-price-row">
+                                <p class="product-price">$32.000</p>
+                                <button class="btn-add-cart">Agregar al carrito</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Tarjeta de Producto 6 -->
+                    <article class="product-card">
+                        <div class="product-image-container">
+                            <button class="btn-favorite" title="Agregar a favoritos">
+                                <span class="material-symbols-outlined">favorite</span>
+                            </button>
+                            <img src="" alt="Set 8 Brochas Profesionales">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Set 8 Brochas Profesionales</h3>
+                            <p class="product-desc">Pelo sintético ultra suave de alta calidad. Incluye estuche de viaje
+                                elegante.</p>
+                            <div class="product-price-row">
+                                <p class="product-price">$68.000</p>
+                                <button class="btn-add-cart">Agregar al carrito</button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Paginación -->
+                <div class="pagination">
+                    <button class="btn-page btn-prev">Anterior</button>
+                    <button class="btn-page active">1</button>
+                    <button class="btn-page">2</button>
+                    <button class="btn-page">3</button>
+                    <button class="btn-page btn-next">Siguiente</button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Pie de Página Principal -->
+    <footer class="main-footer">
+        <div class="footer-brand">
+            <!-- <img src="img/logo.jpeg" alt="Logo"> -->
+            <img src="" alt="Logo">
+            <h2>Distri Magüi</h2>
+            <p>
+                Celebrando la belleza individual a través de cosméticos de alta gama con ingredientes respetuosos.
+            </p>
+        </div>
+        <div class="footer-links">
+            <a href="#">Privacidad</a>
+            <a href="#">Términos</a>
+            <a href="#">Cookies</a>
+        </div>
+        <div class="footer-copy">
+            <p>© 2026 DistriMagui. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
