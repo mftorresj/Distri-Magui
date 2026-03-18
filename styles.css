@@ -94,6 +94,9 @@ body {
 
 /* 4. Encabezado de Página */
 .page-header {
+  text-align: center;
+  padding-top: 4rem;
+  padding-bottom: 2rem;
   padding: 1.5rem 2.5rem 0.5rem;
 }
 
@@ -106,7 +109,42 @@ body {
 .page-header p {
   color: var(--primary);
   font-weight: 500;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
 }
+
+.page header a {
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+.page-text {
+  text-align: center;
+  padding: 0 2.5rem 4rem;
+}
+
+.page-style {
+  max-width: 800px;
+  margin: 0 auto;
+  aspect-ratio: 16/9;
+  background-color: var(--primary-light);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page style img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
 
 /* 5. Categorías (Tabs) */
 .categories-tabs {
