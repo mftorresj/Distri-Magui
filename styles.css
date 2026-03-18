@@ -647,3 +647,18 @@ body {
     border-radius: 10px;
     cursor: pointer;
 }
+
+.contact-info img {
+  width: 200px;
+  height: 200px;
+  border-radius: 40%;
+  border: #0f172a;
+  display: block; 
+  margin: auto;
+}
+
+.contact-info p{
+  --text-dark: #0f172a;
+  --font-display: 'Manrope', sans-serif;
+  text-align: center;
+}
