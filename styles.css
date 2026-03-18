@@ -495,6 +495,14 @@ body {
   max-width: 300px;
 }
 
+.footer-brand img {
+  width: 75px; /* Tamaño del logo */
+  height: 75px; /* Igual al ancho */
+  border-radius: 50%; /* Hace el círculo */
+  object-fit: cover; /* Ajusta la imagen sin deformar */
+  border: 2px solid #ccc; /* Opcional: borde del logo */
+}
+
 .footer-brand h2 {
   font-size: 1.25rem;
   color: var(--text-dark);
