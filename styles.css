@@ -1,11 +1,11 @@
 :root {
-  --primary: #cfa377;
+  --primary: #b22dd3;
   --primary-light: rgba(207, 163, 119, 0.1);
-  --primary-hover: #b88d62;
+  --primary-hover: #ae62b8;
   --bg-light: #f8f7f6;
   --text-dark: #0f172a; /* slate-900 */
   --text-muted: #64748b; /* slate-500 */
-  --border-color: rgba(207, 163, 119, 0.2);
+  --border-color: #be2edb33;
   --font-display: 'Manrope', sans-serif;
   --radius-lg: 0.5rem;
   --radius-xl: 0.75rem;
@@ -45,6 +45,14 @@ body {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+}
+
+.logo-container img {
+  width: 75px; /* Tamaño del logo */
+  height: 75px; /* Igual al ancho */
+  border-radius: 50%; /* Hace el círculo */
+  object-fit: cover; /* Ajusta la imagen sin deformar */
+  border: 2px solid #ccc; /* Opcional: borde del logo */
 }
 
 .logo-container h1 {
