@@ -317,6 +317,10 @@ body {
   opacity: 1;
 }
 
+.product-card a {
+  text-decoration: none;
+}
+
 .product-image-container {
   width: 100%;
   aspect-ratio: 4/5;
