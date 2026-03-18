@@ -3,8 +3,8 @@
   --primary-light: rgba(207, 163, 119, 0.1);
   --primary-hover: #ae62b8;
   --bg-light: #f8f7f6;
-  --text-dark: #0f172a; /* slate-900 */
-  --text-muted: #64748b; /* slate-500 */
+  --text-dark: #0f172a; 
+  --text-muted: #64748b;
   --border-color: #be2edb33;
   --font-display: 'Manrope', sans-serif;
   --radius-lg: 0.5rem;
@@ -36,7 +36,7 @@ body {
   background-color: #ecd0ff;
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--border-color);
-  position: sticky;
+  /*position: sticky; deja fijo el header */
   top: 0;
   z-index: 50;
 }
@@ -45,6 +45,12 @@ body {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+}
+.logo-container a {
+  display: flex;
+  align-items: center; /* alinea verticalmente al centro */
+  gap: 10px;           /* espacio entre el logo y el texto */
+  text-decoration: none; /* quita el subrayado del link */
 }
 
 .logo-container img {
@@ -314,7 +320,7 @@ body {
 
 .product-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);/*este mueve el product card y le agrega una sombra*/
 }
 
 .product-card:hover .product-title {
